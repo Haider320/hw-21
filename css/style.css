@@ -1,0 +1,105 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+p{
+    font-family: "open sans", sans-sarif;
+}
+body{
+
+    font-family: "ubuntu", sans-serif;
+}
+h1,h2{
+    font-family: "Abril Fatface", cursive;
+}
+.container{
+    width: 1170px;
+    margin:auto ;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.w-100{
+    width: 100%;
+}
+.w-50{
+    width: 50%;
+}
+
+.w-33{
+    width: calc(100% / 3);
+}
+.w-25{
+    width: 25%;
+}
+
+
+#top_icon{
+    background-color: red;
+    padding: 15px 10px;
+    color: black;
+    position: fixed;
+    right: 50px;
+    bottom: 100px;
+    display: none;
+    cursor: pointer;
+}
+nav{
+    
+    background-color: rgb(255, 0, 255);
+    
+}
+nav.active{
+    position: fixed;
+    animation-name: fixedmenu;
+    animation-duration: 1s;
+    width: 100%;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fixedmenu{
+from{
+top: -100px;
+
+}
+
+to{
+    top: 0;
+    color: rgb(0, 255, 200);
+    background-color: rgb(140, 0, 255);
+}
+}
+
+nav #menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+
+
+    
+}
+nav #menu li a{
+    padding: 20px 20px;
+    display: inline-block;
+    color: aqua;
+    text-transform: uppercase;
+    transition: 0.6s;
+
+}
+
+nav #menu li a:hover{
+    background-color: rgb(200, 255, 0);
+    color: black;
+}
+
+
